@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>myChess</title>
+    <link rel="stylesheet" href="style/player.css" />
+    <link rel="stylesheet" href="style/gameBoard.css" />
+    <link rel="shortcut icon" href="asset/icon.png" type="image/x-icon" />
+  </head>
+  <body>
+
+    <div class="playerDescription">
+      <div class="opponent"></div>
+      <div class="player"></div>
+    </div>
+
+    <div class="gameConsole">
+      
+
+      <div id="board">
+        <div class="board_row">
+          <div class="num">
+            <div class="num_val">1</div>
+            <div class="num_val">2</div>
+            <div class="num_val">3</div>
+            <div class="num_val">4</div>
+            <div class="num_val">5</div>
+            <div class="num_val">6</div>
+            <div class="num_val">7</div>
+            <div class="num_val">8</div>
+          </div>
+
+          <div class="game">
+            <div class="row">
+              <div class="cell white" id="A1"></div>
+              <div class="cell black" id="B1"></div>
+              <div class="cell white" id="C1"></div>
+              <div class="cell black" id="D1"></div>
+              <div class="cell white" id="E1"></div>
+              <div class="cell black" id="F1"></div>
+              <div class="cell white" id="G1"></div>
+              <div class="cell black" id="H1"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell black" id="A2"></div>
+              <div class="cell white" id="B2"></div>
+              <div class="cell black" id="C2"></div>
+              <div class="cell white" id="D2"></div>
+              <div class="cell black" id="E2"></div>
+              <div class="cell white" id="F2"></div>
+              <div class="cell black" id="G2"></div>
+              <div class="cell white" id="H2"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell white" id="A3"></div>
+              <div class="cell black" id="B3"></div>
+              <div class="cell white" id="C3"></div>
+              <div class="cell black" id="D3"></div>
+              <div class="cell white" id="E3"></div>
+              <div class="cell black" id="F3"></div>
+              <div class="cell white" id="G3"></div>
+              <div class="cell black" id="H3"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell black" id="A4"></div>
+              <div class="cell white" id="B4"></div>
+              <div class="cell black" id="C4"></div>
+              <div class="cell white" id="D4"></div>
+              <div class="cell black" id="E4"></div>
+              <div class="cell white" id="F4"></div>
+              <div class="cell black" id="G4"></div>
+              <div class="cell white" id="H4"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell white" id="A5"></div>
+              <div class="cell black" id="B5"></div>
+              <div class="cell white" id="C5"></div>
+              <div class="cell black" id="D5"></div>
+              <div class="cell white" id="E5"></div>
+              <div class="cell black" id="F5"></div>
+              <div class="cell white" id="G5"></div>
+              <div class="cell black" id="H5"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell black" id="A6"></div>
+              <div class="cell white" id="B6"></div>
+              <div class="cell black" id="C6"></div>
+              <div class="cell white" id="D6"></div>
+              <div class="cell black" id="E6"></div>
+              <div class="cell white" id="F6"></div>
+              <div class="cell black" id="G6"></div>
+              <div class="cell white" id="H6"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell white" id="A7"></div>
+              <div class="cell black" id="B7"></div>
+              <div class="cell white" id="C7"></div>
+              <div class="cell black" id="D7"></div>
+              <div class="cell white" id="E7"></div>
+              <div class="cell black" id="F7"></div>
+              <div class="cell white" id="G7"></div>
+              <div class="cell black" id="H7"></div>
+            </div>
+
+            <div class="row">
+              <div class="cell black" id="A8"></div>
+              <div class="cell white" id="B8"></div>
+              <div class="cell black" id="C8"></div>
+              <div class="cell white" id="D8"></div>
+              <div class="cell black" id="E8"></div>
+              <div class="cell white" id="F8"></div>
+              <div class="cell black" id="G8"></div>
+              <div class="cell white" id="H8"></div>
+            </div>
+          </div>
+        </div>
+        <div class="board_row">
+          <div class="alpha">
+            <div class="alpha_val">A</div>
+            <div class="alpha_val">B</div>
+            <div class="alpha_val">C</div>
+            <div class="alpha_val">D</div>
+            <div class="alpha_val">E</div>
+            <div class="alpha_val">F</div>
+            <div class="alpha_val">G</div>
+            <div class="alpha_val">H</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <script src="scripts/threats.js"></script>
+    <script src="scripts/functions.js"></script>
+    <script src="scripts/validMoves.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/pieces.js"></script>
+    <script src="scripts/board.js"></script>
+    <script src="scripts/constant.js"></script>
+  </body>
+</html>
