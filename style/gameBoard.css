@@ -1,0 +1,137 @@
+/* board design */
+
+:root{
+    --height:10vh;
+    --width:var(--height);
+    --piece:8vh;
+    --color:rgba(245, 18, 41, 0.432);
+}
+
+.gameConsole{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;    
+    background-color: rgba(46, 46, 46, 0.224);
+    box-shadow: 10px 10px 10px rgba(5, 29, 28, 0.769);
+    margin: auto;
+}
+
+#board{
+    margin: auto;
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+    
+
+}
+
+.board_row{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(46, 46, 46);
+   
+    /* border: 2px solid black; */
+}
+
+.num{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    background-color: lightblue;
+    /* border: 2px solid black; */
+}
+
+.num_val{
+    width: 1.5vw;
+    height: var(--height);
+    display:flex;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.alpha{
+    margin-left:1.5vw;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center;
+    align-items: center; */
+    background-color: lightblue;
+    /* border: 2px solid black; */
+}
+
+.alpha_val{
+    width: var(--width);
+    height: 1.5vw;
+    background-color: rgb(46, 46, 46);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    /* border: 2px solid black; */
+}
+
+.game{
+    height:fit-content;
+    width: fit-content;
+}
+
+.row{
+    height: fit-content;
+    width: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(39, 151, 188);
+    /* border: 2px solid black; */
+
+}
+
+.cell{
+    height: var(--height);
+    width: var(--width);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+}
+
+.piece{
+    display: flex;
+    position: absolute;
+    height: var(--height);
+    width: var(--width);
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.piecesImage{
+    height: var(--piece);
+    width: var(--piece);
+
+}
+
+.white{
+    background-color: rgba(255, 255, 255, 0.701);
+}
+
+.black{
+    background-color: rgba(0, 0, 0, 0.297);
+}
